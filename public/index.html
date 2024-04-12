@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1>Brages nettside</h1>
+    <button id="apiButton">Press Me</button>
 </body>
+<script>
+    const apiButton = document.getElementById('apiButton');
+    apiButton.addEventListener('click', async () => {
+        const response = await fetch('/api');
+        const data = await response.json();
+        console.log(data);
+    });
+</script>
 </html>
