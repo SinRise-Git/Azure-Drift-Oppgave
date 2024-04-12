@@ -11,11 +11,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(staticPath,  'index.html')); 
 }); 
 
-app.get('/api/', (req, res) => {
-    res.sendFile(path.join(staticPath, 'api.html'));
+app.get('/movie', (req, res) => {
+    res.sendFile(path.join(staticPath, 'movie.html'));
 })
 
-app.get('/api', (req, res) => {
+app.get('/api/', (req, res) => {
     res.json({message: "Hello, Azure! This is a Node.js application. Which do not work lol!"})
 })
 
