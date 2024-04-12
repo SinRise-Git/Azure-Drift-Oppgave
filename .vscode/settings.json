@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/7692fc98-6e1f-48f5-b2b6-99d962db91c7/resourceGroups/Texs_group/providers/Microsoft.Web/sites/TestWebsiteNodeVS",
-    "appService.deploySubpath": "."
-}

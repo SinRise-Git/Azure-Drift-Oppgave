@@ -6,11 +6,11 @@ const staticPath = path.join(__dirname);
 app.use(express.static(staticPath));
 
 app.get('/', (req, res) => {
-    res.sendFile(staticPath, 'index.html');
+    res.json({message: "Hello, world!"});
 })
 
 app.get('/api', (req, res) => {
-    res.json({message: "Hello, world!"});
+    res.json({message: "Hello, api!"});
 });
 
 app.listen(3000);
